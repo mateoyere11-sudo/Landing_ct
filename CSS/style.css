@@ -1,0 +1,750 @@
+@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-thin-straight/css/uicons-thin-straight.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 16px;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #2d2d2d;
+    overflow-x: hidden;
+}
+
+
+h2 {
+    color: #F5A800;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background-color: orange;
+    align-items: center;
+}
+
+.htitulo {
+    color: white;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    justify-self: center;
+}
+
+.htitulo h1 {
+    display: flex;
+    justify-self: center;
+    margin: 10% 0;
+}
+
+/* NAV  */
+
+nav {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+}
+
+
+.drop {
+    position: relative;
+    display: none;
+    justify-self: center;
+}
+
+.drop_content {
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    min-width: 40px;
+    min-height: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.drop:hover .drop_content {
+    display: block;
+}
+
+.drop:hover .dropbt {
+    background-color: #333333;
+}
+
+.drop_content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop_content a:hover {
+    background-color: #555555;
+}
+
+.dropbt {
+    width: 20%;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navegacion ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 40px 70px;
+    padding: 0;
+    justify-self: center;
+}
+
+.navegacion li a {
+    color: whitesmoke;
+    width: 20%;
+    padding: 10px;
+    margin: auto 140px;
+    font-size: 20px;
+    width: 200px;
+    text-decoration: none;
+    background-color: #333333;
+    border: #555555 solid 1px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.cta {
+    background-color: #222222;
+    padding: 20px;
+    margin: 10px 20px;
+    border: 1px solid #ede9e9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cta a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.cta i {
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+li a:hover {
+    background-color: #555555;
+}
+
+.logo img {
+    width: 140px;
+}
+
+.fondo_head img {
+    width: 100%;
+}
+
+.fondo_head {
+    position: relative;
+    overflow: hidden;
+}
+
+.texto_fh {
+    position: absolute;
+    color: white;
+    justify-self: right;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin: 15% auto;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    gap: 1px;
+}
+
+/* CONTENIDO CENTRAL */
+
+.que_hacemos {
+    background-color: #222222;
+    box-shadow: 0 0 10px rgba(245, 168, 0, 0.3);
+    border-radius: 12px;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.que_hacemos h2 {
+    font-size: 30px;
+    color: #F5A800;
+    text-align: center;
+    border-radius: 10px auto;
+    padding: 20px;
+}
+
+.que_hacemos .texto {
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+}
+
+.sidebar form {
+    padding: 10px;
+    align-items: left;
+}
+
+details summary {
+    cursor: pointer;
+    background-color: #2d2d2d;
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    border: solid whitesmoke 2px;
+}
+
+details {
+    width: 90%;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+details .texto_dtt {
+    margin: 10px auto;
+}
+
+.sidebar {
+    box-shadow: 0 0 10px rgba(245, 168, 0, 0.3);
+    border-radius: 12px;
+    display: block;
+    background-color: #222222;
+    color: #D48F00;
+    gap: 10px;
+    height: 80vh;
+    width: 100%;
+    position: static;
+}
+
+.sidebar label {
+    padding: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+form h2 {
+    font-size: 30px;
+    height: 80px;
+}
+
+.sidebar input {
+    background-color: #333333;
+    padding: 10px;
+    color: #555555;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.sidebar button {
+    background-color: #222222;
+    color: white;
+    border: solid #555555 1px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#fecha {
+    color: white;
+}
+
+.serv {
+    border-radius: 12px;
+    color: white;
+    background-color: #222222;
+    position: static;
+    height: 80vh;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(245, 168, 0, 0.3);
+}
+
+#vm {
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    justify-self: center;
+    border: solid #555555 1px;
+    text-decoration: none;
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+}
+
+#contenedor-central h1 {
+    font-size: 40px;
+    color: #F5A800;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.contenido_cent {
+    gap: 30px;
+    width: 90%;
+    margin: 2px auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+}
+
+.texto_serv {
+    margin: 10px;
+}
+
+/* FIN CONTENIDO CENTRAL (ASIDE, SERV, ¿QUE HACEMOS?) */
+
+footer {
+    background-color: #222222;
+    color: #888888;
+    margin: 20px 2px 2px 2px;
+}
+
+.info_foot div {
+    display: flex;
+}
+
+.info_foot {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr;
+}
+
+.info_foot ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.info_foot ul li {
+    margin: 10px auto;
+}
+
+.info_foot ul li a {
+    color: #888888;
+    text-decoration: none;
+}
+
+.info_foot span {
+    padding: 20px;
+    color: #888888;
+}
+
+.info_foot span h2 {
+    color: #888888;
+}
+
+.info_foot span i {
+    text-decoration: none;
+    color: #888888;
+    margin: auto 10px;
+}
+
+.info_foot span a {
+    text-decoration: none;
+    color: #888888;
+}
+
+/* TARJETAS PRESENTACION */
+
+#tar_presentacion {
+    margin: 1px auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    height: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tar img {
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tar {
+    background-color: #222222;
+    color: white;
+    border-radius: 12px;
+    border: solid #555555 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    transition: all 0.3s ease;
+}
+
+.tar:hover {
+    box-shadow: 0 0 15px #F5A800;
+    transform: scale(1.05);
+    position: relative;
+    z-index: 10;
+}
+
+.tar h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+.tar .presentacion {
+    border: #555555 solid 1px;
+}
+
+.presentacion h1 {
+    font-size: 40px;
+    color: #F5A800;
+    justify-content: center;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.pedidos {
+    display: flex;
+    justify-content: center;
+    background-color: #222222;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(245, 168, 0, 0.3);
+    border-radius: 20px;
+}
+
+.pedidos_h {
+    width: 50vh;
+    margin: 0px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pedidos_h i {
+    font-size: 100px;
+    color: #F5A800;
+}
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 25px rgba(37, 211, 102, 0.8);
+}
+
+
+
+
+/* medias */
+
+@media (max-width: 1025px) and (max-width: 1440px) {
+    .navegacion ul li a {
+        margin: 40px 20px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    main {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .dropbt {
+        width: 100%;
+    }
+
+    .drop_content {
+        width: 100px;
+    }
+
+    .drop .drop_content a {
+        width: 50%;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        width: 100%;
+    }
+
+    .cta {
+        grid-column: 1 / -1;
+        width: 90%;
+        margin: 5px auto;
+    }
+
+
+    .htitulo {
+        font-size: 18px;
+    }
+
+    .htitulo h1 {
+        margin: 50% auto;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    /* Nav */
+
+    .drop {
+        display: block;
+    }
+
+    .navegacion {
+        display: none;
+    }
+
+    .presentacion {
+        grid-template-columns: 1fr;
+        height: 60%;
+    }
+
+    .presentacion .tar_presentacion {
+        height: 5%;
+    }
+
+    .serv,
+    .sidebar,
+    .que_hacemos {
+        height: 100%;
+    }
+
+    .pedidos {
+        height: auto;
+    }
+
+    .sidebar button {
+        margin-top: 87px;
+    }
+
+    .que_hacemos #vm {
+        margin-top: -3px;
+    }
+
+    .que_hacemos h2 {
+        font-size: 25px;
+    }
+
+    .que_hacemos .texto {
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) and (max-width: 1023px) {
+
+    .servicios,
+    .sidebar,
+    .que_hacemos {
+        height: 80vh;
+        font-size: 12px;
+    }
+
+    .drop {
+        display: block;
+    }
+
+    .cta {
+        grid-column: 1 / -1;
+    }
+
+    .navegacion {
+        display: none;
+    }
+
+    .dropbt {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .texto_serv {
+        margin: 10px;
+        font-size: 13px;
+    }
+
+
+    .htitulo h1 {
+        margin: 50% auto;
+    }
+
+    .serv #vm {
+        margin-top: auto;
+    }
+
+    .que_hacemos p {
+        font-size: 13px;
+    }
+
+    .que_hacemos #vm {
+        margin-top: auto;
+    }
+
+    .sidebar button {
+        margin-top: 20px;
+    }
+
+    .sidebar {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) and (max-width: 760px) {
+    main {
+        width: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .fondo_head {
+        width: 100%;
+    }
+
+    .fondo_head img {
+        width: 100%;
+    }
+
+    .texto_fh {
+        font-size: 10px;
+    }
+
+    .presentacion,
+    .pedidos,
+    #contenedor-central {
+        width: 100%;
+    }
+
+    #contenedor-central h1 {
+        font-size: 30px;
+        margin-top: -80%;
+    }
+
+    .presentacion {
+        margin-top: 8%;
+    }
+
+    .pedidos {
+        display: block;
+        height: 500px;
+        margin-top: 20%;
+    }
+
+    .pedidos_h {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .contenido_cent {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 70%;
+    }
+
+    .serv,
+    .que_hacemos,
+    .sidebar {
+        height: auto;
+    }
+
+    #tar_presentacion {
+        grid-template-columns: 1fr;
+        height: 100%;
+        width: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .tar {
+        width: 100%;
+        padding: 0 10px;
+        height: auto;
+    }
+
+    .info_foot {
+        display: block;
+    }
+
+}
+
+@media (max-width:320px) and (max-width: 360px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .drop {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .drop_content {
+        width: 60px;
+    }
+
+    .dropbt i {
+        font-size: 20px;
+    }
+
+    .htitulo {
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* 
+* {
+    outline: 1px solid red;
+} */
