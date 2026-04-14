@@ -269,6 +269,23 @@ form h2 {
     height: 80px;
 }
 
+.contacto {
+    text-align: center;
+    height: 40px;
+    justify-content: center;
+    margin: 10px auto;
+    border: solid gray 2px;
+}
+
+.contacto a {
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
 .sidebar input {
     background-color: #333333;
     padding: 20px;

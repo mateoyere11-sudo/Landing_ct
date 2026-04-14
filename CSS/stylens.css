@@ -88,6 +88,8 @@ nav {
     background-color: #555555;
 }
 
+/* Menu Hamburguesa */
+
 .dropbt {
     width: 20%;
     background-color: orange;
@@ -97,7 +99,7 @@ nav {
     cursor: pointer;
 }
 
-
+/* Links de navegacion */
 .navegacion ul li {
     list-style: none;
     display: inline-block;
@@ -119,6 +121,7 @@ nav {
     border-radius: 10px;
 }
 
+/* Call to action header */
 .cta {
     background-color: #222222;
     padding: 20px;
@@ -230,6 +233,8 @@ footer {
 
 /* FOOTER */
 
+
+/* Tarjetas de demostracion */
 .somos {
     background-color: #222222;
     display: flex;
@@ -282,6 +287,8 @@ h1 {
     height: auto;
 }
 
+
+/* tarjetas Información */
 .info div {
     padding: 18px;
     text-align: left;
